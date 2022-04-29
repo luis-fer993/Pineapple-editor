@@ -1,0 +1,208 @@
+.contenedor-principal{
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-between;
+}
+
+.datos-principal{
+    width: 70%;
+    height: 600px;
+    position:relative;
+    right: 0;
+    margin: auto 5px;
+    background-color: rgb(231, 231, 231);
+}
+
+.side-bar{
+    width: 30%;
+    height: 300px;
+
+position: relative;
+    left: 0;
+    background-color: rgb(143, 229, 255);
+}
+@media screen and (max-width:700px) {
+    .contenedor-principal{
+        justify-content: space-evenly;
+    align-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    }
+    .datos-principal, .side-bar{
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    .titulo-port{
+        margin-top: 40px; 
+    }
+}
+.datos-principal .dato{
+    padding: 5px;
+    margin:20px auto ;
+    border-radius: 25px;
+    background-color: rgb(243, 243, 243);
+    overflow: auto;
+}
+.datos-principal .dato h3, p{
+    display: inline;
+}
+[alt="img-perfil del usuario"]{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ff5c5c;
+}
+
+.img-update{
+    border: 2px dashed  red;
+    border-radius: 15px;
+    width: 90%;
+    height: auto;
+    
+
+}
+.img-update button{
+    height: auto;
+    border-radius: 10px;
+    border-style: none;
+    font-size: medium;
+    cursor: pointer;
+    padding: 5px;
+    position: relative;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+}
+
+.opciones-botones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.opciones-botones>div:first-child{
+    background-color: rgb(0, 162, 255);
+    color: black;
+
+}
+.opciones-botones>div{
+    background-color: rgb(255, 100, 100);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all .3s;
+    margin-top: 1%;
+    
+}
+
+@media screen and (max-width:465px) {
+    .opciones-botones div{
+        z-index: 200;
+    }
+    
+}
+.opciones-botones>div:hover{
+    color: white;
+    background: rgb(70, 98, 255);
+}
+
+/* formularios de actualizacion */
+.boton-continuar>input{
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+.form-datos>h3,.form-datos>h4{
+    color: #000;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.form-datos>textarea{
+    width: 90%;
+    height: 130px;
+    max-width: 100%;
+    min-width: 80%;
+    min-height: 120px;
+    max-height: 135px;
+    font-size: 20px;
+    font-family: var(--textos);
+    border-radius: 10px;
+    border: 5px solid #48e4ff;
+    box-shadow: 7px 7px 5px #43e97b;
+    overflow:auto;
+}
+.form-datos>input {
+    border: 5px solid #48e4ff;
+    box-shadow: 4px 4px 5px #43e97b;
+    font-size: 20px;
+    font-family: var(--textos);
+    border-radius: 10px;
+}
+   /*validar form*/
+
+
+  /* The message box is shown when the user clicks on the password field */
+#message {
+    width: 30%;
+    display:none;
+    background: #f1f1f1;
+    border-radius: 5px;
+    color: #000;
+    position: absolute;
+    top: 0;
+    right: +10px;
+    padding: 20px;
+    margin-top: 10px;
+    z-index: 800;
+    transition: all 1s;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+    display: block;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+  @media screen and (max-width: 500px) {
+    #message{
+        position: relative;
+        width: 80%;
+    }
+  }
+/* formularios de actualizacion */
+footer{
+    position: relative;
+    bottom: 0;
+    margin-top: 2%;
+}

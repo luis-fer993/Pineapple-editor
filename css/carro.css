@@ -1,0 +1,13 @@
+.medios-pago img{
+    width: 30%;
+    height: 100%;
+    object-fit: contain;
+
+}
+.medios-pago{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

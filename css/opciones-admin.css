@@ -1,0 +1,14 @@
+header{
+    
+  background-image:url(../img/img-fondo-abstracto.jpg);
+  background-attachment: scroll;
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+.opciones-administracion{
+
+    padding-top:10%;
+    border-radius: 5px;
+    border: 1px solid red;
+}

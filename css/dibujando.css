@@ -1,0 +1,115 @@
+
+.contenedor-dibujo{
+    width: 80%;
+    height:800px ;
+    margin: 20px 0;
+    border:1px solid red;
+}
+
+#dibujo{
+    width: 80%;
+    height: 80%;
+    background-color: rgb(220, 251, 255);
+    margin-top: 35px;
+}
+
+
+footer{
+    /* width: 100%;
+    height: 200px;      alto de el header */
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);  
+}
+
+
+/*proyecto de dibujo---*/
+
+
+canvas{
+    background-color: rgb(216, 255, 242);
+    border: 1px dashed;
+    margin: auto;
+}
+.opciones p a{
+    display: inline-block;
+    background: blue;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 100px
+    }
+.pen-tools{
+    display:flex ;
+    justify-content: space-around;
+    align-content: center;
+    width: 60%;
+    margin: auto;
+}
+p{
+    text-align: center;
+}
+.fa-refresh{
+    margin-left: 10px;
+    background: red;
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+}
+.pen-size{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.board{
+    width: 800px;
+    margin: auto;
+
+}
+.drawing-colors{
+    display: flex;
+    margin-bottom: 14px;
+}
+.color-circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-left: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.color-circle:nth-child(1){
+    background-color:hotpink ;
+}
+.color-circle:nth-child(2){
+    background-color:orange;
+}
+.color-circle:nth-child(3){
+    background-color:red ;
+}
+.color-circle:nth-child(4){
+    background-color:yellow ;
+}
+.color-circle:nth-child(5){
+    background-color:black;
+}
+.color-circle:nth-child(6){
+    background-color:blue ;
+}
+.color-circle:nth-child(7){
+    background-color:white ;
+}
+.color-circle:nth-child(8){
+    background-color:green ;
+}
+.active{
+    transform: scale(1.4);
+}
+
+#favcolor{
+    width: 50px;
+    height: 40px;
+    padding: 3px;
+    border-radius: 10px;
+    border: 1px solid greenyellow;
+}

@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: var(--textos);
+}
+/*------------header---------*/
+header{
+    width: 100%;
+    height: 200px;      /*alto de el header*/
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);  
+}
+/*barra de contenedor del nav*/
+
+
+/*titulos de la portada*/
+.contenedor-textos-port{
+    width: 100%;
+    /* margin: 30px; */
+    padding-top: 70px;
+    }
+    .titulo-port h1{
+        text-align:center;
+        font-family: var(--pineapple);
+        font-size: 300%;
+        /* text-shadow: 1px 1px 2px yellowgreen; */
+        padding-bottom: 20px;
+        padding: 10px;
+    }
+
+
+/*---------main----------------*/
+
+/*SLIDER----------*/
+
+
+/*SLIDER----------*/
+
+/*PANEL DE OPCIONES*/
+
+.panel-opciones{
+    width: 90%;
+    height: fit-content;
+    margin-top: 10px; 
+    margin-bottom: 20px;
+    /* border:1px solid red; */
+}
+
+.contenedor{
+    position:relative;   
+    background-color: var(--color-rojo-1)!important;
+    margin: 15px 0;
+    border-bottom-left-radius: 55px;
+    border-top-right-radius: 55px;
+}
+
+.btn{
+    margin: 20px 30px;
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    border: 2px solid #ff5c5c ;
+    border-radius: 20px;
+    background-color: #FFC947;
+    transition: all .5s;
+}
+
+.btn:hover{
+    box-shadow: 5px 5px 8px 0 hsla(110, 100%, 71%, 0.733);
+}
+
+.btn p{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+.img-btn-crear a{
+    display: inline-block;
+    text-decoration: none;
+}
+/*-----------------------*/
+
+.lbl-modal img{
+    width: 60px;
+    margin: 40px ;
+    display: inline-block;
+    position: relative;
+    transition: all .5s;
+}
+.lbl-modal img:hover{
+    transform: rotate(45deg);
+}
+
+/*-----------------------*/
+.img-btn-crear a img{
+    width: 60px;
+    margin: 40px ;
+    display: inline-block;
+    position: relative;
+    transition: all .5s;
+}
+.img-btn-crear a img:hover{
+    transform: rotate(45deg);
+}
+
+/*escribir*/
+textarea{
+    width: 90%;
+    height: 230px;
+    font-size: 30px;
+    font-family: var(--textos);
+    border-radius: 10px;
+    border: 5px solid #48e4ff;
+    box-shadow: 7px 7px 5px #43e97b;
+    max-width: 100%;
+    min-width: 80%;
+    max-height: 280px;
+    min-height: 200px;
+}
+@media only screen and (min-width:320px) and (max-width:760px){
+    textarea{
+        width: 80%;
+        height: 250px;
+    }
+}
+/*proyectos de el usuario*/
+
+.contenedor2{
+    position:relative;   
+    background-color: var(--color-amarillo-3);
+    margin: 15px 0;
+
+    border-bottom-left-radius: 55px;
+    border-top-right-radius: 55px;
+
+}
+
+.titulo-cont2{
+    margin: 15px 0;
+    padding: 5px;
+}
+
+.titulo-cont2 h2{
+    padding: 10px;
+}
+
+/* .proyectos{
+
+    
+} */
+
+.proy{
+    width: 250px;
+    height: 350px;
+    background-color: #b9e5ff;
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 7px;
+    border-radius: 13px;
+    transition: all .5s;
+}
+
+.proy:hover{
+    box-shadow: 5px 5px 10px 0 hsla(204, 100%, 65%, 0.781);
+    cursor: pointer;
+}
+
+
+.proy p{
+    padding: 5px;
+    margin: 5px 0;
+    font-size: larger;
+    font-weight: bold;
+} 
+
+.proy div a img{
+    width: 90%;
+}
+
+.proy-descripcion{
+    padding: 2px;
+    margin: 3px;
+}
+.proy-descripcion p{
+    font-size:small;
+    font-weight:normal;
+}
+
+.btn-editar{
+    float: right;
+    margin-right: 10px;
+    width: 50%;
+    height: 30px;
+}
+.btn-editar button{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-amarillo-3);
+    border:2px  solid var(--color-morado-1);
+    border-bottom-left-radius: 10px ;
+    border-top-right-radius: 10px;
+    font-size: larger;
+    font-family: var(--textos);
+    transition: all .5s;
+}
+.btn-editar button:hover{
+    background-color: var(--color-morado-1);
+    border:2px  solid var(--color-amarillo-3);
+    cursor: pointer;
+}
+
+
+.proyecto-vertodo button{
+    width: 200px;
+    height: 90px;
+    background-color: var(--color-rojo-1);
+    outline: 5px solid var(--color-morado-1);
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 30px;
+    font-family: var(--textos);
+    transition: all .5s;
+    border: none;
+    margin: 1em auto;
+  }
+
+.proyecto-vertodo button:hover{
+    background-color: var(--color-amarillo-3);
+    cursor: pointer;
+}
+
+
+/*---ESCRIBIR----*/
+
+
+/*------FIN ESCRIBIR----*/
+
+
+/*-----------MI LISTA DE TAREAS-----------*/
+
+
+/* Remove margins and padding from the list */
+
+.lista-tareas{
+    width: 70%;
+   /* height: 700px; */
+   height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px 15px;
+    /* background-color:rgb(255, 147, 129);
+     */
+   /*  background-color: #ff5c5c;*/
+    border-radius: 20px;
+    position: relative;
+}
+
+/* Remove margins and padding from the list */
+#myUL {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  #myUL li {
+    cursor: pointer;
+    height: auto;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 28px;
+    transition: 0.5s;
+  
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    list-style-type:none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  #myUL li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+  #myUL li:hover {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  #myUL li.checked {
+    background: #14db9b;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  #myUL li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 3px 4px 0;
+    top: 15px;
+    left: 16px;
+    transform: rotate(38deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #fff67d;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+  .header img{width: 50%;}
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  #myInput {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 26px;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #3898ff;
+    color: #000;
+    float: left;
+    text-align: center;
+    font-size: 26px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: #0f83ff;
+  }
+
+
+@media screen and (max-width: 750px) {
+    .lista-tareas{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .header {
+        background-color: #fff67d;
+        padding: 10px;
+      }
+      .header img{width: 100%;}
+      #myInput {
+        width: 100%;
+      } 
+      .addBtn {
+        margin-top: 10px;
+        width: 100%;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------fin MI LISTA DE TAREAS-----------*/
+
+
+
+/*---------fin  main----------------*/
+
+
+/*------------------------footer---------------------*/
+footer{
+    /* position: fixed;
+    bottom: 0px; */
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);  /*color footer*/
+    position: relative;
+    display: block;
+
+}
+
+.contenedor-footer-2{
+    position: relative;
+    float: right;
+
+}
+
+.contenedor-footer-2 p{
+    padding: 0px;
+    /* font-size: 40px; */
+    font-size: 150%;
+    font-family: var(--pineapple);
+}
+
+.titulo-final{
+    text-align: left;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline;
+}
+
+/*-------fin footer---------*/

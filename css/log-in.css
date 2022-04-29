@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../img/bg.jpg);
+    background-size:cover;
+    /* background-image: radial-gradient(circle at 50% -20.71%, #ade5ff 0, #7dcefb 25%, #3cb5f2 50%, #009ce9 75%, #0085e0 100%); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.login-container {
+    height: auto;
+    width: 80%;
+    margin: 30px auto;
+    /* border-radius: 10px; */
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.cont-form{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10%;
+    border-radius:15px ;
+    background-color:rgba(172, 172, 116, 0.363);
+    border: 3px solid tomato;
+}
+
+.image-container {
+    padding: 5px;
+    width: 40%;
+    background-color:transparent;
+    box-sizing: border-box;
+}
+
+.title {
+    text-transform: capitalize;
+    font-size:xx-large;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color:rgb(255, 0, 0);
+    margin: 5px;
+    margin-top: 55px;
+}
+
+.social-login {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.social-login-element {
+    width: 30%;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 5px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    border: 1.9px solid tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-login-element img {
+    width: 1.875rem;
+    height: 1.875rem;
+    position: relative;
+    top: 0;
+    left: -0.625rem;
+}
+
+.social-login-element:hover {
+    background-color: #fff;
+}
+
+.cont-form > p {
+    font-size: 1.25px;
+    margin-top: 1.5px;
+}
+
+[alt="usuario-logo"]{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: +70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid tomato;
+}
+.input {
+    padding-left: 20px;
+    border: none;
+    border-radius: 5px;
+    /* font-weight: 600; */
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    width: 80%;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.input:hover {
+    border: 2px solid royalblue;
+}
+.check{
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+}
+[type="reset"]{
+    letter-spacing: 1px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(11, 149, 255);
+    cursor: pointer;
+    width: 30%;
+    height: 50px;
+    margin-top: 10px;
+    font-size:small;
+}
+[type="reset"]:hover{
+    background-color:rgb(33, 159, 255);
+}
+.btn {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color:tomato;
+    cursor: pointer;
+    width: 90%;
+    height: 60px;
+    margin-top: 10px;
+    font-size:larger;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color:rgb(253, 116, 92);
+}
+.formulario p {
+    margin: 0;
+}
+
+.span {
+    color: tomato;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 740px) {
+    .login-container {
+        width: 70%;
+        margin-top: 3rem;
+    }
+    .cont-form {
+        width: 90%;
+        border-radius: 5px;
+    }
+    
+    .image-container {
+        display: none;
+    }  
+}
+
+@media screen and (max-width: 650px) {
+    .login-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .login-container {
+        height: 90%;
+    }
+    .social-login-element span{
+        display: none;
+    }
+    .social-login-element img{
+        margin-left: 25px;
+    }
+    .social-login {
+        flex-direction: column;
+        align-items: center;
+        height: 30%;
+    }
+
+    .cont-form > p {
+        margin: 0;
+    }
+    [alt="usuario-logo"]{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/*
+colres:
+
+rojo: #f67c73
+
+verde: #2eb885
+
+azul: #46a7f5
+
+naranja: #ffa92a
+*/
+
+
+
+ /* The alert message box */
+ .alert {
+    padding: 20px;
+    width: 70%;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+        opacity: 1;
+        transition: opacity 0.6s; /* 600ms to fade out */
+        position: absolute;
+        z-index: 500;
+      }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  } 
+
+
+/* boton de regreso */
+
+.link-regreso{
+    display: inline-block;
+    position: absolute;
+    left: +60px;
+    top: +30px;
+}
+
+  /*validar form*/
+
+
+  /* The message box is shown when the user clicks on the password field */
+#message {
+    width: 30%;
+    display:none;
+    background: #f1f1f1;
+    border-radius: 5px;
+    color: #000;
+    position: absolute;
+    top: 0;
+    right: +10px;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+  @media screen and (max-width: 500px) {
+    #message{
+        position: relative;
+        width: 70%;
+    }
+  }
